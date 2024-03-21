@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function login(){
+                var name=document.getElementById("uname").value;
+                var pass=document.getElementById("pword").value;
+                if(name=='admin' && pass=='admin'){
+                    alert("valid")
+                    document.getElementById("sptext").innerHTML="valid user";
+                }
+                else{
+                    document.getElementById("sptext").innerHTML="<font color='red'>invalid user</font>";
+                    alert("validation filed")
+                }    
+                }
+        </script>
+    </head>
+    <body>
+        <form>
+            <table align="center" style="background-color: antiquewhite;">
+            <tr>    
+                <td>UserName:</td>
+                <td><input type="text" id="uname"/></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td> <input type="password" id="pword"/></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Login" onclick="login()"></td>
+            </tr>    
+            </table>
+        </form>
+        <span id="sptext"></span>
+    </body>
+</html>

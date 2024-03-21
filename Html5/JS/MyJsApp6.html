@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function show(){
+                var name=document.getElementById("pname").value;
+                document.getElementById("pname1").value=name;
+                alert(name)
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            First Name : <input type="text" id="pname" value="uday"><br/>
+            Copy of the Name : <input type="text" id="pname1">
+            <input type="button" value="click" onclick="show()">
+        </form>
+        
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function show(){
+                var x=document.getElementById("t1").value;
+                var y=document.getElementById("t2").value;
+                var z=parseInt(x)+parseInt(y);
+                document.getElementById("t3").value=z;
+                alert("t3")
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            First Number : <input type="text" id="t1"><br/>
+            Second Number : <input type="text" id="t2">
+            Sum:<input type="text" id="t3">
+            <input type="button" value="Test" onclick="show()">
+        </form>
+        
+    </body>
+</html>

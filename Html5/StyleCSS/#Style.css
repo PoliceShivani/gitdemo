@@ -1,0 +1,25 @@
+.italic{
+    font-style: italic;
+    font-size: xx-large;
+}
+.my colours{
+    background-color: rgb(red, green, blue);
+    color: darkred;
+
+}
+#t1{
+
+    text-transform: capitalize;
+    text-shadow: 5px 5px 5px black ;
+    text-decoration: dotted;
+
+}    
+#container1{
+    width: 300px;
+    height: 100px;
+    border-style: groove;
+    border-color: crimson;
+    border-radius: 5px 5px 5px 5px;
+    border-width: medium;
+    margin-left: 40%;
+}

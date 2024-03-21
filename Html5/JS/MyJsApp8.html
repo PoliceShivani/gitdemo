@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function login(){
+                var name=document.getElementById("uname").value;
+                var pass=document.getElementById("pword").value;
+                if(name=='admin' && pass=='admin'){
+                    alert("valid user");
+                }
+                else{
+                    alert("invalid user");
+                }    
+                }
+        </script>
+    </head>
+    <body>
+        <form>
+            <table>
+            <tr>    
+                <td>UserName:</td>
+                <td><input type="text" id="uname"/></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td> <input type="pass" id="pword"/></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Login" onclick="login()"></td>
+            </tr>    
+            </table>
+        </form>
+        
+    </body>
+</html>

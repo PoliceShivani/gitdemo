@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function show(){
+                var name=document.getElementById("pname").value;
+                var age=document.getElementById("page").value;
+                if(age > 18){
+                    alert("Qualified for Drving");
+                    document.getElementById("sptext").innerHTML="Qualified for Driving";
+                }
+                else if(age < 18){
+                    alert("Not Qualified for Driving");
+                    document.getElementById("sptext").innerHTML="Not Qualified for Driving";
+                }
+                var price=document.getElementById("pprice").value;
+                var rate=document.getElementById("prate").value;
+                var time=document.getElementById("ptime").value;
+                var z=(parseInt(price)*parseInt(rate)*parseInt(time))/100;
+                document.getElementById("sum").value=parseInt(z);
+                alert("sum")
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            Name : <input type="text" id="pname" value=""><br/>
+            Age of the Person : <input type="text" id="page" value=""><br/>
+            price : <input type="text" id="pprice" value=""></form>
+            rate : <input type="text" id="prate" value=""><br/>
+            time : <input type="text" id="ptime" value=""><br/>
+            sum : <input type="text" id="psum" value="">
+            <input type="button" value="test" onclick="show()">
+        </form>
+        <span id="sptext"></span>
+    </body>
+</html>
